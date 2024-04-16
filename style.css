@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.image-box {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.img-backgroud {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+.mask {
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(109deg, rgb(40, 66, 101) 5%, rgba(10, 12, 16, 0.7) 50%, rgb(219, 148, 29) 140%);
+    position: fixed;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.wrape {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid gray;
+    border-radius: 10px;
+    background: #f4f4f4cc;
+    padding: 20px;
+    width: 90%;
+    margin: 70px 0 20px;
+}
+
+.card-header {
+    display: flex;
+    gap: 25px;
+    border: 2px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: bold;
+    color: #777;
+    font-size: 1rempx;
+}
+
+input,
+select {
+    height: 30px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 14px;
+    background-color: #fff;
+    color: #555;
+    font-weight: 700;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+
+button {
+    height: 2rem;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #3F5880;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 200ms ease-in-out;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 20px 0 5px 0;
+}
+
+.result {
+    display: flex;
+    gap: 25px;
+}
+
+.conversion-box {
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+
+#name-currency-to-convert strong,
+#currency-to-convert strong,
+#name-converted-currency strong,
+#converted-value strong,
+#name-currency-to-convert span,
+#currency-to-convert span,
+#name-converted-currency span,
+#converted-value span {
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#switch-button {
+    margin: 10px 0;
+}
+
+#name-currency-to-convert span,
+#currency-to-convert span,
+#name-converted-currency span,
+#converted-value span {
+    color: #555;
+}
+
+.currency-symbol {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    background: #d9d5d052;
+    padding: 2px;
+    border-radius: 1rem;
+}
+
+.develop {
+    margin-right: 15px;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    /* color: #fff; */
+}
+
+.link-footer {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-media {
+    width: 21px;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.social-media:hover {
+    transform: translateY(-5px);
+}
+
+ @media screen and (min-width: 1040px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .card-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        text-align: end;
+        padding-right: 10px;
+    }
+
+    select {
+        text-align: center;
+    }
+
+    .conversion-box {
+        width: 100%;
+        padding: 15px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .wrape {
+        height: 100%;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    .card-header {
+        gap: 5px;
+    }
+
+    h3 {
+        margin: 20px 0 5px 0;
+    }
+
+    .result {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conversion-box {
+        width: 100%;
+        padding: 5px;
+        gap: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .link-footer {
+        display: flex;
+    }
+}

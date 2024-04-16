@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Conversor de Moedas</title>
+  </head>
+
+  <body>
+    <div class="wrape">
+      <header class="logo">
+        <img class="logo-img" src="./assets/logo.png" alt="logo-do-conversor" />
+        <h1>Conversor de Moedas</h1>
+      </header>
+
+      <main class="container">
+        <section class="card-header">
+          <label>
+            Valor
+            <input placeholder="0.00" id="value-input" type="number" />
+          </label>
+
+          <label>
+            Converter de
+            <select class="select-to-convert">
+              <option value="real">Real (BRL)</option>
+              <option value="dolar">Dólar EUA (USD)</option>
+              <option value="euro">Euro (EUR)</option>
+            </select>
+          </label>
+
+          
+
+          <label>
+            Converter para
+            <select class="select-converted">
+              <option value="dolar">Dólar EUA (USD)</option>
+              <option value="real">Real (BRL)</option>
+              <option value="euro">Euro (EUR)</option>
+            </select>
+          </label>
+
+          <button id="convert-button">Converter</button>
+        </section>
+
+        <section class="card-body">
+          <h3>Resultado da conversão</h3>
+
+          <div class="result">
+            <section class="convert-from conversion-box">
+              <img
+                src="./assets/real.png"
+                alt="imagem da moeda"
+                class="currency-image-to-convert currency-symbol"
+              />
+
+              <div class="info-convert-from">
+                <p id="name-currency-to-convert">
+                  <strong>De: </strong><span>Real (BRL)</span>
+                </p>
+                <p id="currency-to-convert">
+                  <strong>A converter: </strong><span>1,00</span>
+                </p>
+              </div>
+            </section>
+
+            <button id="switch-button">
+                <span class="material-symbols-outlined"> sync_alt </span>
+              </button>
+
+            <section class="convert-to conversion-box">
+              <img
+                src="./assets/dolar.png"
+                alt="simbolo dolar"
+                class="converted-currency-image currency-symbol"
+              />
+
+              <div class="info-convert-to">
+                <p id="name-converted-currency">
+                  <strong>Para: </strong><span>Dólar EUA (USD)</span>
+                </p>
+                <p id="converted-value">
+                  <strong>Convertido: </strong><span>1,00</span>
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <div class="image-box">
+        <img src="./assets/moedas.png" alt="" class="img-backgroud" />
+        <div class="mask"></div>
+      </div>
+
+      <footer>
+        <p class="develop">
+          &copy; 2024 - Desenvolvido por Guilherme Coutinho.
+        </p>
+        <div class="link-footer">
+          <a
+            href="https://www.linkedin.com/in/guilherme-rcoutinho/"
+            target="_blank"
+            title="Linkedin"
+            ><img
+              src="./assets/linkedin.png"
+              alt="Linkedin"
+              class="social-media"
+          /></a>
+          <a
+            href="https://github.com/guilhermercoutinho"
+            target="_blank"
+            title="GitHub"
+            ><img src="./assets/github.png" alt="Github" class="social-media"
+          /></a>
+          <a
+            href="https://www.instagram.com/guilherme._coutinho/"
+            target="_blank"
+            title="Instagram"
+            ><img
+              src="./assets/instagram.png"
+              alt="Instagram"
+              class="social-media"
+          /></a>
+          <a
+            href="mailto:guilhermecoutinho.rc@gmail.com"
+            target="_blank"
+            title="Email"
+            ><img src="./assets/gmail.png" alt="Gmail" class="social-media"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

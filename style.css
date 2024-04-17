@@ -60,7 +60,7 @@ h1 {
     border-radius: 10px;
     background: #f4f4f4cc;
     padding: 20px;
-    width: 90%;
+    width: 85%;
     margin: 70px 0 20px;
 }
 
@@ -201,7 +201,7 @@ footer {
 
  @media screen and (min-width: 1040px) {
     .container {
-        width: 1000px;
+        max-width: 1000px;
     }
 }
 

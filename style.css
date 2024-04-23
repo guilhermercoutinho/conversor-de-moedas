@@ -206,6 +206,9 @@ footer {
 }
 
 @media screen and (max-width: 940px) {
+    .container {
+        margin: 20px 0;
+    }
     .card-header {
         display: flex;
         flex-direction: column;
